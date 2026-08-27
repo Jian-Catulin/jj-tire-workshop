@@ -23,7 +23,7 @@
             <h2>Contact Us</h2>
             <p>Need a specific tool for your garage? Reach out to us:</p>
             <ul>
-                <li>Email: jian.catulin@tup.edu.ph</li>
+                <li>Email: catulinjianjacob@gmail</li>
                 <li>Phone: (0912) 345-6789</li>
             </ul>
         </section>
@@ -32,6 +32,41 @@
     <footer>
         <p>&copy; 2026 Jian Jacob A. Catulin</p>
     </footer>
+
+<fieldset>
+<legend>Your details</legend>
+
+<p>
+
+<label for="name">Name</label><br>
+<input type="text" id="name" name="name" required>
+
+</p>
+
+<label for="email">Email</label><br>
+<input type="email" id="email" name="email" required>
+
+</p>
+
+<label for="subject">Subject</label><br>
+<select id="subject" name="subject" required></select>
+    <option value="" name="subject" required>  
+    <option value="product">Product Question (Tires, Compressors, Jacks)</option>
+    <option value="service">Serive & Repair Booking</option>
+    <option value="wholesale">Whole & Bulk Ordering</option>
+    <option value="other"></option>Other Inquiry</option>
+    </select>
+</p>
+
+<p>
+    <label for="message">Message</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea>
+</p>
+</fieldset>
+
+<button type="submit">Send message</button>
+</form>
+
 
 </body>
 </html>
