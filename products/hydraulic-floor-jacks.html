@@ -48,5 +48,59 @@
         </table>
     </main>
 
+    <form>
+    <h2>Enquire About This Product</h2>
+
+  
+    <p>
+        <label for="quantity">Quantity</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+    </p>
+
+    
+    <fieldset>
+        <legend>Delivery Method</legend>
+        <p>
+            <input type="radio" id="pickup" name="delivery" value="pickup" required>
+            <label for="pickup">Store Pickup</label>
+        </p>
+        <p>
+            <input type="radio" id="metro_delivery" name="delivery" value="metro">
+            <label for="metro_delivery">Metro Manila Delivery</label>
+        </p>
+        <p>
+            <input type="radio" id="provincial_delivery" name="delivery" value="provincial">
+            <label for="provincial_delivery">Provincial Shipping</label>
+        </p>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Optional Extras</legend>
+        <p>
+            <input type="checkbox" id="warranty" name="extras" value="extended_warranty">
+            <label for="warranty">Add 1-Year Extended Warranty</label>
+        </p>
+        <p>
+            <input type="checkbox" id="demo" name="extras" value="demo_setup">
+            <label for="demo">Include setup demonstration on delivery</label>
+        </p>
+    </fieldset>
+
+  
+    <p>
+        <label for="email">Contact Email</label><br>
+        <input type="email" id="email" name="email" required>
+    </p>
+
+   
+    <button type="submit">Submit Enquiry</button>
+
+</form>
+
+    <footer>
+        <p>&copy; 2026 Jian Jacob A. Catulin</p>
+    </footer>
+
 </body>
 </html>
