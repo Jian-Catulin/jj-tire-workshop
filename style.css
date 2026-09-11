@@ -70,13 +70,18 @@ nav a:hover {
   border-radius: 8px;
 }
 
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 
 .product-card {
   border: 1px solid var(--muted);
   background-color: white;
   padding: 20px;
-  margin-bottom: 20px;
   border-left: 5px solid var(--brand);
+  flex: 1 1 240px; 
 }
 
 /*  Contact Form */
