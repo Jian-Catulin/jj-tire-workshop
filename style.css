@@ -1,19 +1,15 @@
 :root {
-
   --brand: #177A54; 
   --ink: #1C2420;
   --muted: #5D665C;
   --bg-light: #F7F9F6;
 }
 
-
 * {
-
   box-sizing: border-box;
 }
 
 body {
-
   font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: var(--ink);
@@ -22,10 +18,13 @@ body {
 }
 
 
-header {
+.site-header {
   background-color: white;
   padding: 20px;
   border-bottom: 2px solid var(--brand);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 main {
@@ -42,19 +41,14 @@ footer {
 
 
 nav ul {
- 
   list-style: none;
   padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
-nav li {
- 
-  display: inline-block;
-  margin-right: 20px;
-}
 
 nav a {
- 
   text-decoration: none;
   color: var(--brand);
   font-weight: bold;
@@ -65,7 +59,19 @@ nav a:hover {
 }
 
 
-.card {
+.centered-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+  background-color: #e8ecea; 
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+
+.product-card {
   border: 1px solid var(--muted);
   background-color: white;
   padding: 20px;
@@ -73,9 +79,7 @@ nav a:hover {
   border-left: 5px solid var(--brand);
 }
 
-
-
-/* ===== Contact Form ===== */
+/*  Contact Form */
 fieldset {
   padding: 20px;
   border-radius: 8px;
@@ -90,7 +94,6 @@ legend {
   padding: 0 8px;
 }
 
-
 input, textarea, select {
   padding: 12px;
   border: 1px solid var(--muted);
@@ -99,7 +102,6 @@ input, textarea, select {
   max-width: 400px;
   font-family: inherit;
 }
-
 
 button[type="submit"] {
   background-color: var(--brand);
@@ -116,7 +118,6 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: var(--ink);
 }
-
 
 input:focus,
 textarea:focus,
