@@ -131,17 +131,42 @@ select:focus {
   outline-offset: 2px;
 }
 
+
 .page {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "masthead masthead"
-    "side     main"
-    "foot     foot";
+    "masthead"
+    "main"
+    "side"
+    "foot";
   gap: 16px;
+}
+
+
+@media (min-width: 700px) {
+  .page {
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "masthead masthead"
+      "side     main"
+      "foot     foot";
+  }
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 header { grid-area: masthead; }
 aside  { grid-area: side; }
 main   { grid-area: main; }
 footer { grid-area: foot; }
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
