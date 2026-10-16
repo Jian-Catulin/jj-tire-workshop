@@ -11,7 +11,8 @@
 
         <header class="site-header">
             <div class="brand">
-                <h1>JJ Tire Workshop</h1>
+              
+                <h1 id="shop-name">JJ Tire Workshop</h1>
                 <p>Your trusted shop for reliable tires and smooth rides.</p>
             </div>
             
@@ -24,12 +25,17 @@
             </nav>
         </header>
 
-       
         <aside>
             <h3>Shop Hours</h3>
             <p>Mon - Fri: 8AM - 6PM</p>
             <p>Sat - Sun: 9AM - 4PM</p>
             
+            <br>
+            
+            <!-- Added a place to display the computed JavaScript calculation -->
+            <h3>Live Inventory Value</h3>
+            <p id="computed-stats"></p>
+
             <br>
             
             <h3>Categories</h3>
@@ -79,11 +85,13 @@
         </main>
 
         <footer>
-            <p>&copy; 2026 Jian Jacob A. Catulin</p>
+           
+            <p id="footer-copyright">&copy; 2026 Jian Jacob A. Catulin</p>
         </footer>
-
 
     </div>
 
+   
+    <script src="script.js"></script>
 </body>
 </html>
